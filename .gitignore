@@ -1,0 +1,14 @@
+_ReSharper*/
+bin/
+debug/
+FakesAssemblies/
+obj/
+release/
+testresults/
+*.suo
+*.user
+.nuget/NuGet.exe
+Custom.config
+log4net.config
+Web.config
+EPiServer.Sample/Web.Template.config

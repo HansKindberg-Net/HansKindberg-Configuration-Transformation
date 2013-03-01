@@ -1,0 +1,29 @@
+﻿To fix the Web.config structure:
+1. Add all the config files
+2. Save project
+3. Unload the project
+4. Change concerned files/nodes to:
+	<Content Include="Web.config" />
+	<None Include="Web.Development.config">
+		<DependentUpon>Web.Template.config</DependentUpon>
+	</None>
+	<None Include="Web.Production.config">
+		<DependentUpon>Web.Template.config</DependentUpon>
+	</None>
+	<None Include="Web.Template.config">
+		<DependentUpon>Web.config</DependentUpon>
+	</None>
+	<None Include="Web.Test.config">
+		<DependentUpon>Web.Template.config</DependentUpon>
+	</None>
+5. Save
+6. Reload the project
+7. Exclude Web.config from Source Control
+
+To transform:
+1. Save project
+2. Unload the project
+3. Add the following <import> tag (preferably near the other import statements and the path pointing to where you put the the targets file):
+	<Import Project="$(SolutionDir)Configuration-Transformation-Targets\Web\Configuration.Transformations.targets" />
+4. Save
+5. Reload the project
