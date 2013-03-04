@@ -101,7 +101,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
-  <Import Project="$(SolutionDir)Configuration-Transformation-Targets\EPiServer\Configuration.Transformations.targets" />
+	<Import Project="$(SolutionDir)packages\EPiServer-Application-Files.7.0.586.1\Configuration\Configuration.Transformations.targets" Condition="Exists('$(SolutionDir)packages\EPiServer-Application-Files.7.0.586.1\Configuration\Configuration.Transformations.targets')" />
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">

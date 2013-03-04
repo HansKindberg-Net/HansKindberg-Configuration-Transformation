@@ -27,6 +27,6 @@ To transform:
 1. Save project
 2. Unload the project
 3. Add the following <import> tag (preferably near the other import statements and the path pointing to where you put the the targets file):
-	<Import Project="$(SolutionDir)Configuration-Transformation-Targets\EPiServer\Configuration.Transformations.targets" />
+	<Import Project="$(SolutionDir)packages\EPiServer-Application-Files.7.0.586.1\Configuration\Configuration.Transformations.targets" Condition="Exists('$(SolutionDir)packages\EPiServer-Application-Files.7.0.586.1\Configuration\Configuration.Transformations.targets')" />
 4. Save
 5. Reload the project

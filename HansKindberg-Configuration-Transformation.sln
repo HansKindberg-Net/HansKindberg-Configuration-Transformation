@@ -17,17 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{1921AC3C-EA3
 		Configuration-Transformation-Targets\Web\Configuration.Transformations.targets = Configuration-Transformation-Targets\Web\Configuration.Transformations.targets
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EPiServer", "EPiServer", "{23DACE9B-F3B4-4784-BFE9-14E4658E7589}"
-	ProjectSection(SolutionItems) = preProject
-		Configuration-Transformation-Targets\EPiServer\Configuration.Transformations.targets = Configuration-Transformation-Targets\EPiServer\Configuration.Transformations.targets
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{BED6C6BE-B681-455E-8F48-DEA5361E502A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EPiServer-Application-Files.7.0.586.1", "EPiServer-Application-Files.7.0.586.1", "{FC3C9504-6C8F-4000-9DAC-80E1081735EF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{A7ECCF8B-2C57-4094-9A4E-098CE42D26ED}"
 	ProjectSection(SolutionItems) = preProject
+		packages\EPiServer-Application-Files.7.0.586.1\Configuration\Configuration.Transformations.targets = packages\EPiServer-Application-Files.7.0.586.1\Configuration\Configuration.Transformations.targets
 		packages\EPiServer-Application-Files.7.0.586.1\Configuration\Web.Template.config = packages\EPiServer-Application-Files.7.0.586.1\Configuration\Web.Template.config
 	EndProjectSection
 EndProject
@@ -61,7 +57,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1921AC3C-EA38-4193-A073-AB1F401ADA30} = {99FC6706-3B5F-415C-8D2B-97D9DA8A584E}
-		{23DACE9B-F3B4-4784-BFE9-14E4658E7589} = {99FC6706-3B5F-415C-8D2B-97D9DA8A584E}
 		{FC3C9504-6C8F-4000-9DAC-80E1081735EF} = {BED6C6BE-B681-455E-8F48-DEA5361E502A}
 		{A7ECCF8B-2C57-4094-9A4E-098CE42D26ED} = {FC3C9504-6C8F-4000-9DAC-80E1081735EF}
 	EndGlobalSection
